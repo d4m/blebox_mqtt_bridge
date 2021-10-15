@@ -1,0 +1,10 @@
+{
+    "name": "BleBox MQTT Bridge",
+    "version": "1",
+    "slug": "blebox_mqtt_bridge",
+    "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+    "startup": "application",
+    "boot": "auto",
+    "options": {},
+    "schema": {}
+  }
