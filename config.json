@@ -1,10 +1,48 @@
 {
-    "name": "BleBox MQTT Bridge",
-    "version": "1",
-    "slug": "blebox_mqtt_bridge",
-    "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
-    "startup": "application",
-    "boot": "auto",
-    "options": {},
-    "schema": {}
+  "name": "BleBox MQTT Bridge",
+  "description": "Wrapper MQTT dla urządzeń BleBox",
+  "url": "https://github.com/d4m/blebox_mqtt",
+  "version": "1.0.0",
+  "slug": "blebox_mqtt_bridge",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "application",
+  "boot": "auto",
+  "hassio_api": true,
+  "hassio_role": "default",
+  "ports": {
+    "3000/tcp": 3000
+  },
+  "ports_description": {
+    "3000/tcp": "HTTP server port"
+  },
+  "options": {
+    "mqtt": {
+      "broker": "127.0.0.1"
+    },
+    "http": {
+      "port": 3000
+    },
+    "log": ["error", "mqtt", "http", "blebox"],
+    "blebox": [
+      {"ip": ""}
+    ]
+  },
+  "schema": {
+    "http": {
+      "bind": "str?",
+      "port": "port?"
+    },
+    "mqtt": {
+      "broker": "str?",
+      "port": "port?",
+      "username": "str?",
+      "password": "str?",
+      "discovery": "bool?",
+      "discovery_prefix": "str?"
+    },
+    "log": ["str?"],
+    "blebox": [
+      { "ip": "str", "discovery": "bool?", "inputs": "bool?" }
+    ]
   }
+}
