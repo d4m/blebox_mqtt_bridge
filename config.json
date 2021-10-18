@@ -1,6 +1,6 @@
 {
   "name": "BleBox MQTT Bridge",
-  "description": "Wrapper MQTT dla urządzeń BleBox",
+  "description": "Wrapper MQTT dla urządzeń BleBox napisany w Node.js",
   "url": "https://github.com/d4m/blebox_mqtt",
   "version": "1.0.0",
   "slug": "blebox_mqtt_bridge",
