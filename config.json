@@ -42,7 +42,7 @@
     },
     "log": ["str?"],
     "blebox": [
-      { "ip": "str", "discovery": "bool?", "inputs": "bool?" }
+      { "ip": "str", "component": "list(switch|light)?", "discovery": "bool?", "inputs": "bool?" }
     ]
   }
 }
