@@ -2,14 +2,15 @@
   "name": "BleBox MQTT Bridge",
   "description": "Wrapper MQTT dla urządzeń BleBox napisany w Node.js",
   "url": "https://github.com/d4m/blebox_mqtt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "slug": "blebox_mqtt_bridge",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "application",
+  "services": [
+    "mqtt:need"
+  ],
   "boot": "auto",
-  "hassio_api": true,
-  "hassio_role": "default",
-  "init": "false",
+  "init": false,
   "ports": {
     "3000/tcp": 3000
   },
