@@ -3,4 +3,4 @@ set -e
 
 CONFIG_PATH=/data/options.json
 
-node server.js $CONFIG_PATH
+exec node server.js $CONFIG_PATH
