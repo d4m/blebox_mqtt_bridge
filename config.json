@@ -9,7 +9,7 @@
   "boot": "auto",
   "hassio_api": true,
   "hassio_role": "default",
-  "init": false,
+  "init": "false",
   "ports": {
     "3000/tcp": 3000
   },
